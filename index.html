@@ -4,151 +4,280 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>navigation</title>
-    <script>
-        // alert("this is  Nitin file")
-
-        function greet(name, hello) {
-            console.log(name + "is my name")
-            console.log(hello + "dont disturb this")
-
-        }
-        name2 = "Nitin ";
-        hello2 = "please ";
-        greet(name2, hello2);
-    </script>
+    <title>Home</title>
     <style>
-        .my li {
-            float: left;
+        body {
+            margin: 0;
+            padding: 0;
+            background: rgb(100, 255, 38);
+        }
+        
+        @media (max-width: 400px) {
+            #nav {
+                background: url('https://source.unsplash.com/1600x1500/?nature,water');
+                height: 400px;
+            }
+            .nav {
+                /* background-color: brown; */
+                margin: 0;
+                display: flex;
+                /* height: 30px; */
+            }
+            li {
+                margin: 9px;
+                list-style: none;
+                /* background-color: blue; */
+                /* width: px; */
+                height: 30px;
+                color: blue;
+                font-size: 32px;
+            }
+            a {
+                text-decoration: none;
+            }
+            .head {
+                text-align: center;
+                margin: 80px 30px 0 50px;
+            }
+            h1 {
+                font-size: 30px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            h2 {
+                text-align: center;
+            }
+            .food {
+                border: 3px solid black;
+                padding: 40px;
+                padding-top: 5px;
+                padding-bottom: 4px;
+                margin: 20px 35px 5px 35px;
+                background-color: gainsboro;
+            }
+            img {
+                border-radius: 50%;
+                margin-left: 10px;
+            }
+            .footer {
+                height: 50px;
+                background-color: rgb(26, 21, 21);
+                color: white;
+                margin: 20px 35px 5px 35px;
+            }
+            #a {
+                margin: 15px 0 0 60px;
+            }
+            .a {
+                margin-left: 40px;
+            }
+            button {
+                border-radius: 25px;
+                background-color: deepskyblue;
+            }
+            button:hover {
+                background-color: deeppink;
+            }
+            #text {
+                margin: 100px 0 0 105px;
+                background-color: rgb(105, 202, 202);
+                color: firebrick;
+                width: 160px;
+                height: 25px;
+            }
+            #time {
+                /* height: 300px; */
+                background-color: gold;
+            }
+        }
+        
+        #nav {
+            background: url('https://source.unsplash.com/1600x1500/?nature,water');
+            height: 400px;
+        }
+        
+        .nav {
+            /* background-color: brown; */
+            margin: 0;
+            display: flex;
+            /* height: 30px; */
+        }
+        
+        li {
+            margin: 9px;
             list-style: none;
-        }
-        
-        .my ul {
-            background-color: rgb(8, 2, 3);
-            overflow: hidden;
-            border: 4px solid green;
-            border-radius: 32px;
-        }
-        
-        .you li {
-            margin: 10px;
-            padding: 10px;
-            color: darkgray;
+            /* background-color: blue; */
+            /* width: px; */
+            height: 30px;
+            color: blue;
+            font-size: 32px;
         }
         
         a {
             text-decoration: none;
         }
         
-        #him {
-            float: right;
-            margin-top: 20px;
-            margin-right: 10px;
-            width: 100px;
-        }
-        
-        body {
-            background-color: rgb(170, 230, 185);
-        }
-        
-        h2 {
-            width: 130px;
-            padding: auto;
-            margin: auto;
-            border: 4px dashed rgb(74, 226, 86);
+        .head {
+            text-align: center;
+            margin: 80px 30px 0 50px;
         }
         
         h1 {
-            width: 300px;
-            padding: auto;
-            margin: auto;
-            border: 4px dashed rgb(74, 226, 86);
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+        h2 {
             text-align: center;
         }
         
-        .my {
-            border-radius: 3px;
-            border: 4px solid rgb(245, 16, 16);
-            background-color: rgb(28, 197, 36);
-            margin: 9px;
+        .food {
+            border: 3px solid black;
+            padding: 40px;
+            padding-top: 5px;
+            padding-bottom: 4px;
+            margin: 20px 35px 5px 35px;
+            background-color: gainsboro;
         }
         
-        .mem {
-            border: 4px dashed red;
-            box-sizing: border-box;
-            border-radius: 12px;
-            width: 300px;
-            margin: 50px auto;
-            padding: 20px auto;
+        img {
+            border-radius: 50%;
+            margin-left: 10px;
         }
         
-        #char {
-            text-align: center;
-            width: 230px;
-            margin: 90px auto;
-            padding: 40px 40px;
-            border: 4px dashed green;
+        .footer {
+            height: 50px;
+            background-color: rgb(26, 21, 21);
+            color: white;
+            margin: 20px 35px 5px 35px;
         }
         
-        #hello {
-            display: flex;
-            align-items: center;
+        #a {
+            margin: 15px 0 0 60px;
         }
         
-        h3 {
-            text-align: center;
+        .a {
+            margin-left: 40px;
+        }
+        
+        button {
+            border-radius: 25px;
+            background-color: deepskyblue;
+        }
+        
+        button:hover {
+            background-color: deeppink;
+        }
+        
+        .az {
+            margin: 100px 0 0 705px;
+            background-color: rgb(105, 202, 202);
+            color: firebrick;
+            width: 160px;
+            height: 25px;
+        }
+        
+        #time {
+            /* height: 300px; */
+            background-color: gold;
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <nav class="my">
-            <ul class="you">
-                <li><a href="#" target="_blank"><button>Home</button></a></li>
-                <li><a href="one.html" target="_blank"><button>About</button></a></li>
-                <li><a href="#"><button>Contact</button></a></li>
-                <li><a href="#"><button>Service</button></a></li>
-                <input type="text" id="him" placeholder="Search">
-            </ul>
-        </nav>
-    </header>
-    <div class="clas">
-
+    <div class="container" id="container">
+        <header>
+            <nav>
+                <div id="nav">
+                    <div>
+                        <ul class="nav">
+                            <li><button><a href="#" alt="#">Home</button></a>
+                            </li>
+                            <li><button><a href="About.html" alt="#">About</button></a>
+                            </li>
+                            <li><button><a href="Contact.html" alt="#">Contact</button></a>
+                            </li>
+                            <li><button><a href="blog.html" alt="#">Blog</button></a>
+                            </li>
+                        </ul>
+                        <div class="search">
+                            <input type="text" name="search" class="az" id="text" placeholder="SEARCH">
+                        </div>
+                    </div>
+                    <div class="head">
+                        <h1>WELCOME TO OUR WEBSITE</h1>
+                        <span id="time"></span>
+                    </div>
+                </div>
+                <div class="content" id="food">
+                    <div class="food">
+                        <h2>FOOD</h2>
+                        <img src="images/food.jpg" alt="error">
+                        <p>We all know very well foods are very important and we consume them in our daily life, foods affect our body and our mental and social health because each food or liquid contain particular nutrition which is very important for our
+                            physical and mental development. </p>
+                    </div>
+                    <div class="food">
+                        <h2>GYM</h2>
+                        <img src="images/gym.jpeg" alt="error">
+                        <p>It boosts the brainpower and sharpens our memory, one can improve self confidence. Your mind gets filled with positive thoughts and a positive process of reflection. Exercising every day strengthens your heart and allows it to
+                            pump more efficiently with less strain. Regular exercise may lower your risk of developing diabetes, metabolic syndrome and some types of cancer, such as colon cancer and breast cancer.</p>
+                    </div>
+                    <div class="food">
+                        <h2>NATURE</h2>
+                        <img src="images/nature.jpg" alt="error">
+                        <p>The world is a beautiful place, but I’m sure you have worked that out already. There is nothing like sitting back and admiring what mother nature has to offer. She does a pretty good job. And there is nothing better than capturing
+                            the moment so you can admire it over and over again. </p>
+                    </div>
+                    <div class="food">
+                        <h2>EDUCATION</h2>
+                        <img src="images/edu.jpg " alt="error ">
+                        <p>Education gives us knowledge of the world around us. It develops in us a perspective of looking at life. It is the most important element in the evolution of the nation. Without education, one will not explore new ideas. It means
+                            one will not able to develop the world because without ideas there is no creativity and without creativity, there is no development of the nation.</p>
+                    </div>
+                </div>
+            </nav>
+        </header>
     </div>
-    <h1><span>My Bio-data</span></h1>
-    <div class="class">
-        <div class="mem">
-            <h3> ABOUT CHARACTER</h3>
-            <ol>
-                <li>JAI PRAKASh</li>
-                <li>SHOBHA</li>
-                <li>DIPENDRA</li>
-                <li>NITIN</li>
-            </ol>
-        </div>
-        <div class="classes">
-            <h2><span>About Me</span></h2>
-            <p class="my">My full name is <strong>Nitin Singh Saini</strong>. I live in dayalpur ehich is a big village and this is placed in Punjab state . At that time i have complete my final exam of +2 class from St. Soldier Divine Public School at jalandhar near
-                NIT which is very bad School in my eyes. Generally, my hobby is change every month or year so at that time my hobby is playing with code . My passion is to complete all programming language. </p>
-        </div>
-        <div class="classes">
-            <h2><span>My Mother</span></h2>
-            <p class="my">My Mother name is <strong>Shobha Devi</strong>. She is house wife. She is the best mom in the world. i love my mom too much and she also love me too much. she is a good cooker. she helps me a lot in every type of work. </p>
-        </div>
-        <div class="classes">
-            <h2><span>My Father</span></h2>
-
-            <p class="my">My father name is <strong>Jai Prakash Singh </strong>. He is assistant manager . He lives in Moga . He work in <strong>Paras spices company</strong>. The main focus of my dad is that all my son will become a good person and get a good job.
-                So, they always talk about my and my brother study everytime when talk. I also love my father too much.box
-            </p>
-        </div>
-        <div class="classes">
-            <h2><span>My Brother</span></h2>
-            <p class="my">My Elder brother name is <strong>Dipendra Singh Saini</strong>. He is one and half year more old than me . But, he is reading with me . He is very angry person. He also live with me . He has very big fat. He is very bad brother as well as
-                good brother for me. He can't live with me for more than 2 hours. we do fight every time. </p>
+    <div class="footer">
+        <div>
+            <button id="a" onclick="abc()">LIKE IT</button>
+            <button class="a">SHARE IT</button>
+            <div id="copy">
+                <!-- <button class="a"><img src="images/facebook.png " alt="error "></button>
+                    <button class="a"><img src="images/twitter.png " alt="error "></button>
+                    <button class="a"><img src="images/insta.jpg " alt="error "></button> -->
+            </div>
         </div>
     </div>
+
+    <script>
+        alert("this is Nitin & Dipendra website");
+        let promt = confirm("Do you want to open this then click OK");
+        console.log(promt);
+        let abc = prompt("Enter Your Name", "");
+        console.log(abc);
+    </script>
+    <script>
+        // function abc() {
+        //     let container = document.getElementById("container");
+        //     let a = document.getElementById("a");
+        //     if (container.style.display != 'none') {
+        //         container.style.display = 'none';
+        //     } else {
+        //         container.style.display = 'block';
+        //     }
+        // }
+        // let newDate = new Date();
+        // console.log(newDate);
+
+        setInterval(update, 1000);
+        // console.log(abc)
+
+        // let time = document.getElesmentById("time")
+
+        function update() {
+            time.innerHTML = new Date();
+        }
+    </script>
 </body>
 
 </html>
